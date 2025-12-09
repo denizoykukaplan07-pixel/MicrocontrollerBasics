@@ -53,8 +53,22 @@ By gradually increasing and decreasing the duty cycle between 0 and 255, the LED
 - analogWrite() usage
 - Loop animation logic
 - Automatically reversing direction at brightness limits
+- 
 
-![Potentiometer Setup](imagespot_setup.png)
+## Day 4 – Potentiometer to PWM (Analog Input → LED Brightness Control)
+This project demonstrates how an analog input signal (from a potentiometer) can be processed and mapped to control the brightness of an LED using PWM (Pulse Width Modulation).  
+It is a fundamental example of a **sensor → processing → actuator** pipeline used in robotics, drones, and laser automation systems.
+
+### 🔧 1. Circuit Overview
+A potentiometer is used as a variable voltage divider.  
+- One outer pin is connected to **5V (VCC)**  
+- The other outer pin is connected to **GND**  
+- The middle pin provides a continuously adjustable voltage between 0–5V
+
+This middle pin is connected to **A0**, allowing Arduino to measure the input voltage as a value between `0–1023`.
+
+The LED is controlled through a PWM-enabled digital pin (**D9**), with the current limited by a 220Ω resistor.
+
 
 
 

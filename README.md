@@ -53,7 +53,7 @@ By gradually increasing and decreasing the duty cycle between 0 and 255, the LED
 - analogWrite() usage
 - Loop animation logic
 - Automatically reversing direction at brightness limits
-- 
+  
 
 ## Day 4 – Potentiometer to PWM (Analog Input → LED Brightness Control)
 This project demonstrates how an analog input signal (from a potentiometer) can be processed and mapped to control the brightness of an LED using PWM (Pulse Width Modulation).  

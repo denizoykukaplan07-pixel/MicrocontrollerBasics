@@ -43,3 +43,17 @@ The project can be tested using Wokwi (Arduino Simulator).
 A push button press toggles the LED and prints `ON` or `OFF` in the Serial Monitor.
 
 
+## Day 3 – PWM LED Fade
+This project demonstrates how to control LED brightness using PWM (`analogWrite`).  
+By gradually increasing and decreasing the duty cycle between 0 and 255, the LED creates a smooth fade-in and fade-out effect.
+
+### 🔧 Concepts learned
+- PWM (Pulse Width Modulation)
+- Duty cycle control (0–255)
+- analogWrite() usage
+- Loop animation logic
+- Automatically reversing direction at brightness limits
+
+
+
+

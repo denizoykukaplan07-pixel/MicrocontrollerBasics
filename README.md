@@ -54,6 +54,9 @@ By gradually increasing and decreasing the duty cycle between 0 and 255, the LED
 - Loop animation logic
 - Automatically reversing direction at brightness limits
 
+![Potentiometer Setup](imagespot_setup.png)
+
+
 
 
 

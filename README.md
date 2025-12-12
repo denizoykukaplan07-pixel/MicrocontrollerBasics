@@ -69,6 +69,42 @@ This middle pin is connected to **A0**, allowing Arduino to measure the input vo
 
 The LED is controlled through a PWM-enabled digital pin (**D9**), with the current limited by a 220Ω resistor.
 
+## Day 5 – RGB LED PWM Color Fading
+
+This project demonstrates how to control an RGB LED using three independent PWM channels.  
+By smoothly adjusting the PWM duty cycle of the red, green, and blue channels, the LED transitions between colors automatically.
+
+This is a fundamental technique used in:
+- Robotics  
+- UAV / drone lighting and signaling  
+- Laser system indicators  
+- General embedded systems  
+- Any multi-channel actuator control scenario  
+
+---
+
+### 🔌 1. Circuit Overview
+
+We use a **common cathode RGB LED**, which means all LED diodes (R, G, B) share the same ground pin.
+
+Each LED channel must have its own **current-limiting resistor**:
+
+| LED Color | Arduino Pin | Notes |
+|----------|-------------|-------|
+| Red      | D9          | PWM output + 220Ω resistor |
+| Green    | D10         | PWM output + 220Ω resistor |
+| Blue     | D11         | PWM output + 220Ω resistor |
+| Common   | GND         | Shared ground |
+
+**Important:**  
+Driving RGB LEDs without resistors can damage the LED or the microcontroller pins.
+
+If you have a circuit screenshot, include it like this:
+
+```md
+![RGB LED Circuit](day5_rgb_pwm/rgb_setup.png)
+
+
 
 
 

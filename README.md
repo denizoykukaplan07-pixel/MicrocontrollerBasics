@@ -94,7 +94,8 @@ Each LED channel must have its own **current-limiting resistor**:
 | Red      | D9          | PWM output + 220Ω resistor |
 | Green    | D10         | PWM output + 220Ω resistor |
 | Blue     | D11         | PWM output + 220Ω resistor |
-| Common   | GND         | Shared ground |              
+| Common   | GND         | Shared ground | 
+
 ![RGB LED Circuit](day5_rgb_pwm/rgb_setup.png)
 
 

@@ -98,10 +98,6 @@ Each LED channel must have its own **current-limiting resistor**:
 
 **Important:**  
 Driving RGB LEDs without resistors can damage the LED or the microcontroller pins.
-
-If you have a circuit screenshot, include it like this:
-
-```md
 ![RGB LED Circuit](day5_rgb_pwm/rgb_setup.png)
 
 

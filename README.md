@@ -69,6 +69,7 @@ A potentiometer is used as a variable voltage divider.
 This middle pin is connected to **A0**, allowing Arduino to measure the input voltage as a value between `0–1023`.
 
 The LED is controlled through a PWM-enabled digital pin (**D9**), with the current limited by a 220Ω resistor.
+![Potentiometer to PWM](day4_potentiometer_pwm/imagespot_setup.png)
 
 ## Day 5 – RGB LED PWM Color Fading
 

@@ -15,6 +15,7 @@ This example reads a push button using INPUT_PULLUP and toggles the built-in LED
 To prevent multiple triggers caused by mechanical bouncing, a 50 ms software debounce is used.  
 Only the HIGH → LOW transition (“new press event”) toggles the LED state.
 Concepts learned:
+
 -`Digital input (reading a push button)`
 
 -`Internal pull-up resistor (INPUT_PULLUP)`

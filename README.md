@@ -100,6 +100,50 @@ Each LED channel must have its own **current-limiting resistor**:
 
 ![RGB LED Circuit](day5_rgb_pwm/rgb_setup.png)
 
+# Day 6 – Ultrasonic Distance Measurement (HC-SR04)
+
+This project measures distance using the **HC-SR04 ultrasonic sensor** and prints the result to the serial monitor (cm).
+
+It demonstrates core embedded concepts:
+- Digital I/O (`pinMode`, `digitalWrite`)
+- Pulse timing measurement (`pulseIn`)
+- Converting time-of-flight to distance using the speed of sound
+
+---
+
+## Hardware / Wiring
+
+HC-SR04 pins:
+
+| HC-SR04 | Arduino UNO |
+|--------|-------------|
+| VCC    | 5V          |
+| GND    | GND         |
+| TRIG   | D9          |
+| ECHO   | D10         |
+
+If you have a circuit screenshot, add it here:
+
+![Wiring](wiring.png)
+
+---
+
+## How it works
+
+1. The Arduino sends a **10 µs trigger pulse** on `TRIG`.
+2. The sensor emits an ultrasonic burst and sets `ECHO` **HIGH** while it waits for the echo.
+3. When the echo returns, `ECHO` goes **LOW**.
+4. `pulseIn(echoPin, HIGH)` measures the duration of the HIGH pulse (µs), which equals the **round-trip** travel time.
+5. Distance is computed as:
+
+\[
+distance = \frac{time \cdot v_{sound}}{2}
+\]
+
+Where:
+- \(v_{sound} \approx 0.034 \, \text{cm/µs}\)
+- Division by 2 is used because the signal travels **to the target and back**.
+
 
 
 

@@ -124,7 +124,7 @@ HC-SR04 pins:
 
 If you have a circuit screenshot, add it here:
 
-![Wiring](day6_pmw/wiring.png)
+![Wiring](day6_ultrasonic_distance_pmw/wiring.png)
 
 ---
 

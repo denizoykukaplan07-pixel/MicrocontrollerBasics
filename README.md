@@ -124,7 +124,7 @@ HC-SR04 pins:
 
 If you have a circuit screenshot, add it here:
 
-![Wiring](wiring.png)
+![Wiring](day6_pmw/wiring.png)
 
 ---
 
@@ -134,15 +134,11 @@ If you have a circuit screenshot, add it here:
 2. The sensor emits an ultrasonic burst and sets `ECHO` **HIGH** while it waits for the echo.
 3. When the echo returns, `ECHO` goes **LOW**.
 4. `pulseIn(echoPin, HIGH)` measures the duration of the HIGH pulse (µs), which equals the **round-trip** travel time.
-5. Distance is computed as:
 
-\[
-distance = \frac{time \cdot v_{sound}}{2}
-\]
-
-Where:
-- \(v_{sound} \approx 0.034 \, \text{cm/µs}\)
-- Division by 2 is used because the signal travels **to the target and back**.
+### Commit 2 – Moving Average Filter
+- Added a moving average filter (window size N=5)
+- Prints both raw and filtered distance for comparison
+- Improves stability and reduces measurement noise
 
 
 

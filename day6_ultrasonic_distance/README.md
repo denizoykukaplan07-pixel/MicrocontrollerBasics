@@ -31,8 +31,8 @@ The filtered distance is then used to control an RGB LED, providing intuitive vi
   Ultrasonic sensor with RGB LED wiring diagram.
 
 ## Distance Status Logic
-- Green: Safe distance
-- Yellow: Caution
-- Orange: Alert
-- Red (blinking): Danger
-- Blue: No echo / out of range
+- **Green**: Safe distance (> 100 cm)
+- **Yellow**: Caution (50–100 cm)
+- **Orange**: Alert (20–50 cm)
+- **Red (blinking)**: Danger (< 20 cm)
+- **Blue**: No echo / out of range

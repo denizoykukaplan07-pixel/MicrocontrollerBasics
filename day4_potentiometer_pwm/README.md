@@ -1,20 +1,26 @@
-# Day 4 – Potentiometer to PWM Control
+# Day 4 – Potentiometer Controlled PWM Output
 
 ## Objective
-Use an analog input to control LED brightness in real time.
+Control the brightness of an LED using a potentiometer as an analog input.
 
 ## Concepts Learned
-- analogRead()
-- ADC resolution (0–1023)
-- Mapping analog values to PWM output
-- Sensor → actuator control
+- Analog-to-Digital Conversion (ADC)
+- analogRead() usage (0–1023)
+- Mapping analog input to PWM output
+- analogWrite() and duty cycle control
+- Sensor → actuator signal flow
 
 ## Description
-A potentiometer is used as a voltage divider and connected to an analog input pin.  
-The measured value is mapped to a PWM output to control LED brightness.
+A potentiometer is used as a voltage divider to generate a variable analog voltage.
+This voltage is read using the Arduino's ADC and mapped to a PWM value to control
+the brightness of an LED in real time.
 
-This is a fundamental example of analog signal processing in embedded systems.
+This project demonstrates a fundamental embedded systems concept:
+**continuous sensor input controlling an actuator output**.
 
 ## Files
-- potentiometer_pwm.ino
-- wiring.png
+- map_pwm.ino  
+  Reads the potentiometer value and maps it to a PWM output.
+- imagespot_setup.png  
+  Wiring diagram of the potentiometer and LED circuit.
+

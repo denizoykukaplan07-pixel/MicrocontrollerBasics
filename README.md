@@ -123,7 +123,6 @@ HC-SR04 pins:
 | ECHO   | D10         |
 
 ![Wiring](day6_ultrasonic_distance/wiring.png)
-
 ---
 
 ## How it works

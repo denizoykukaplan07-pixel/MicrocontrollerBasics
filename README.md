@@ -155,6 +155,7 @@ The filtered distance is visualized using an **RGB LED status indicator**.
 - **Orange**: Alert (20–50 cm)
 - **Red (blinking)**: Danger (< 20 cm)
 - **Blue**: No echo / out of range
+  
 ![Wiring](day6_ultrasonic_distance/wiring2(ultrasonic_rgb).png)
 
 

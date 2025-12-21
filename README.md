@@ -122,9 +122,7 @@ HC-SR04 pins:
 | TRIG   | D9          |
 | ECHO   | D10         |
 
-If you have a circuit screenshot, add it here:
-
-![Wiring](day6_ultrasonic_distance_pmw/wiring.png)
+![Wiring](day6_ultrasonic_distance/wiring.png)
 
 ---
 

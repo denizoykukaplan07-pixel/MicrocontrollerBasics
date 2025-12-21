@@ -137,7 +137,7 @@ HC-SR04 pins:
 - Prints both raw and filtered distance for comparison
 - Improves stability and reduces measurement noise
 
-###Commit 3: Ultrasonic Distance Measurement with RGB Feedback
+### Commit 3: Ultrasonic Distance Measurement with RGB Feedback
 In this project, an ultrasonic distance sensor is used to measure object distance in real time.  
 To improve measurement stability, a **moving average filter** is applied.  
 The filtered distance is visualized using an **RGB LED status indicator**.
@@ -155,7 +155,7 @@ The filtered distance is visualized using an **RGB LED status indicator**.
 - **Orange**: Alert (20–50 cm)
 - **Red (blinking)**: Danger (< 20 cm)
 - **Blue**: No echo / out of range
-![Wiring](day6_ultrasonic_distance/wiring.png)
+![Wiring](day6_ultrasonic_distance/wiring2(ultrasonic_rgb).png)
 
 
 
